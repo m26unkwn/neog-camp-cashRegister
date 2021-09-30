@@ -11,13 +11,13 @@
     <header class="header">
       <div class="nav">
         <h1>Cash Register</h1>
-        <button class="toggle-mode">BTN</button>
+        <button class="toggle-mode">☀️</button>
       </div>
     </header>
     <main class="main">
       <div class="container">
         <form class="user-input">
-          <h2 class="desc">Enter Bill Amount and Cash Paid</h2>
+          <h2 class="user-heading">Enter Bill Amount and Cash Paid</h2>
           <div class="bill-input">
             <label for="bill">Bill Amount:</label>
             <input
@@ -28,7 +28,16 @@
               class="bill-amount"
             />
           </div>
-
+          <div class="cash-input">
+            <label for="cash">Cash Paid: </label>
+            <input
+              type="number"
+              min="0"
+              required
+              id="cash"
+              class="cash-amount"
+            />
+          </div>
           <button type="submit" class="btn">Check Currency</button>
         </form>
         <div class="result-display">
@@ -60,5 +69,6 @@
       </div>
       <small>&copy Monu Shukla 2020</small>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
