@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav">
+        <h1>Cash Register</h1>
+        <button class="toggle-mode">BTN</button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <form class="user-input">
+          <h2 class="desc">Enter Bill Amount and Cash Paid</h2>
+          <div class="bill-input">
+            <label for="bill">Bill Amount:</label>
+            <input
+              type="number"
+              min="0"
+              required
+              id="bill"
+              class="bill-amount"
+            />
+          </div>
+
+          <button type="submit" class="btn">Check Currency</button>
+        </form>
+        <div class="result-display">
+          <h2 class="error"></h2>
+          <ul class="note-list"></ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-list">
+        <ul class="list">
+          <li class="list-item">
+            <a href="https://twitter.com/getumank" class="list-link">Twitter</a>
+          </li>
+          <li class="list-item">
+            <a href="https://github.com/m26unkwn" class="list-link">Github</a>
+          </li>
+          <li class="list-item">
+            <a href="https://www.linkedin.com/in/monu-shukla/" class="list-link"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="list-item">
+            <a href="https://monushukla.vercel.app" class="list-link"
+              >Portfolio</a
+            >
+          </li>
+        </ul>
+      </div>
+      <small>&copy Monu Shukla 2020</small>
+    </footer>
+  </body>
+</html>
